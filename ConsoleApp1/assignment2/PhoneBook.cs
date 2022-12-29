@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,6 +73,11 @@ namespace ConsoleApp1.assignment2
         public override void Sort()
         {
             if(PhoneList.Count == 0) Console.WriteLine("PhoneList is empty");
+            else
+            {
+                Console.WriteLine("Sort Ascending by name:");
+                PhoneList.Sort();
+            }
         }
     }
 }
